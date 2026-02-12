@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "ultra-100",
+      "title": "100-Mile Ultras",
+      "date": "2026-02-08",
+      "location": "Various",
+      "excerpt": "Long days, big lessons, and the power of consistent training.",
+      "highlights": ["Fueling strategy", "Strength training support", "Mindset tools"]
+    },
+    {
+      "id": "family-backpacking",
+      "title": "Family Backpacking Trips",
+      "date": "2026-02-08",
+      "location": "Mountains",
+      "excerpt": "Being active together is the best kind of training.",
+      "highlights": ["Gear notes", "Kid-friendly routes", "Recovery + mobility"]
+    }
+  ]
+}
