@@ -55,7 +55,7 @@ function Shell({ children }) {
     <div className="bg">
       <style>{`
         :root{
-          --bg0:#07111a;
+          --bg0:#0b1f3a;
           --bg1:#071a22;
           --card: rgba(255,255,255,.06);
           --stroke: rgba(255,255,255,.12);
