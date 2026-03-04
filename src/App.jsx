@@ -173,7 +173,8 @@ function Shell({ children }) {
   );
 }
 
-function TopBar({ page, setPage }) {
+
+   function TopBar({ page, setPage }) {
   const nav = [
     { key: "home", label: "Home" },
     { key: "blog", label: "Blog" },
@@ -195,122 +196,16 @@ function TopBar({ page, setPage }) {
 
       <div className="nav">
         {nav.map((n) => (
-          <button style={{ 
-  background: "#f97316", 
-  color: "white", 
-  padding: "10px 16px", 
-  borderRadius: 8, 
-  border: "none",
-  fontWeight: "bold"
-}<button style={{ 
-  background: "#f97316", 
-  color: "white", 
-  padding: "10px 16px", 
-  borderRadius: 8, 
-  border: "none",
-  fontWeight: "bold"
-}}>
-
-  );
-}
-
-function Home({ setPage }) {
-  return (
-    <>
-      <div className="hero">
-        <div className="card glow">
-          <span className="kicker">
-            <Icon name="spark" />
-            Strength • Endurance • Menopause Coaching
-          </span>
-
-          <div className="h1">
-            Train for longevity —
-            <br />
-            not thinness.
-          </div>
-
-          <p className="sub">
-            Virtual coaching for women (beginner → advanced), with a special focus on peri- and post-menopause.
-            We build muscle and bone density, improve energy, and chase goals like marathons, 100-milers, hikes,
-            or simply feeling amazing in your body.
-          </p>
-
-          <div className="btnrow">
-            <button className="btn primary" onClick={() => setPage({ key: "contact" })}>
-              Start with a free consult <Icon name="arrow" />
-            </button>
-            <button className="btn" onClick={() => setPage({ key: "blog" })}>Read the blog</button>
-            <button className="btn" onClick={() => setPage({ key: "adventures" })}>See adventures</button>
-          </div>
-
-          <div className="chips">
-            <span className="chip"><Icon name="wave" /> Strength + endurance blend</span>
-            <span className="chip"><Icon name="spark" /> Personalized goals</span>
-            <span className="chip"><Icon name="mountain" /> Beginner-friendly</span>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="section">
-            <h2>Credentials</h2>
-            <div className="tile">
-              <p>
-                NASM CPT • 80/20 Endurance • RRCA Running Coach • UESCA Running Coach • Menopause2.0 • Exercise Science Degree
-              </p>
-            </div>
-          </div>
-
-          <div className="section">
-            <h2>What you can train for</h2>
-            <ul className="list">
-              <li>Marathon, ultra (50K → 100 miles), or first 5K</li>
-              <li>Strength & gym goals (without “diet culture”)</li>
-              <li>Hikes, backpacking, adventure travel</li>
-              <li>Energy, confidence, and long-term health</li>
-            </ul>
-          </div>
-
-          <div className="section">
-            <h2>Core belief</h2>
-            <div className="notice">
-              We prioritize muscle + bone density as an investment in your future self — exercise as longevity, not punishment.
-            </div>
-          </div>
-        </div>
+          <button
+            key={n.key}
+            className={cx("pill", page.key === n.key && "active")}
+            onClick={() => setPage({ key: n.key })}
+          >
+            {n.label}
+          </button>
+        ))}
       </div>
-
-      <div className="section">
-        <div className="grid2">
-          <div className="card">
-            <h2>Client wins</h2>
-            <div className="tile" style={{ marginBottom: 10 }}>
-              <h3>A) 100-mile finish</h3>
-              <p>“Lauren helped me achieve my 100 mile race by adapting her training philosophy to my needs.”</p>
-            </div>
-            <div className="tile" style={{ marginBottom: 10 }}>
-              <h3>B) PR after menopause</h3>
-              <p>“I never thought it was possible to PR a marathon after menopause—Lauren showed me a different way to train.”</p>
-            </div>
-            <div className="tile">
-              <h3>C) Stronger, better energy</h3>
-              <p>“Lauren didn’t promise weight loss; she promised I’d feel better, strong, confident—and she delivered.”</p>
-            </div>
-          </div>
-
-          <div className="card">
-            <h2>About Lauren</h2>
-            <p className="muted" style={{ lineHeight: 1.7 }}>
-              I’ve run many ultras (including 100s), plus 50 milers, 50Ks, and marathons. I love lifting weights and staying active:
-              hiking, swimming, snorkeling, scuba diving, and backpacking with my family.
-            </p>
-            <button className="linkbtn" onClick={() => setPage({ key: "adventures" })}>
-              Explore adventures <Icon name="arrow" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
 
