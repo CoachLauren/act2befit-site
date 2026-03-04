@@ -55,8 +55,8 @@ function Shell({ children }) {
     <div className="bg">
       <style>{`
         :root{
-          --bg0:#0b1f3a;
-          --bg1:#071a22;
+          --bg0:#1e3a8a:
+          --bg1:#f97316
           --card: rgba(255,255,255,.06);
           --stroke: rgba(255,255,255,.12);
           --text: rgba(255,255,255,.92);
@@ -87,7 +87,7 @@ function Shell({ children }) {
         .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px;}
         .brand-badge{
           width:34px; height:34px; border-radius:12px; display:grid; place-items:center;
-          background: linear-gradient(135deg, rgba(45,212,191,.25), rgba(251,113,133,.22));
+          background:  rgba(45,212,191,.25)linear-gradient(135deg, #1e3a8a, #f97316), rgba(251,113,133,.22));
           border:1px solid var(--stroke);
         }
         .nav{display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end}
@@ -195,16 +195,22 @@ function TopBar({ page, setPage }) {
 
       <div className="nav">
         {nav.map((n) => (
-          <button
-            key={n.key}
-            className={cx("pill", page.key === n.key && "active")}
-            onClick={() => setPage({ key: n.key })}
-          >
-            {n.label}
-          </button>
-        ))}
-      </div>
-    </div>
+          <button style={{ 
+  background: "#f97316", 
+  color: "white", 
+  padding: "10px 16px", 
+  borderRadius: 8, 
+  border: "none",
+  fontWeight: "bold"
+}<button style={{ 
+  background: "#f97316", 
+  color: "white", 
+  padding: "10px 16px", 
+  borderRadius: 8, 
+  border: "none",
+  fontWeight: "bold"
+}}>
+
   );
 }
 
