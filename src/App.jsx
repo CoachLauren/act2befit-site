@@ -85,15 +85,24 @@ export default function App() {
             </div>
           </div>
 
+          
           <div style={cardStyle}>
-            <h3 style={{ marginTop: 0, fontSize: 24 }}>Why Act2befit</h3>
-            <ul style={{ paddingLeft: 20, lineHeight: 1.9, color: "rgba(255,255,255,0.88)" }}>
-              <li>Personalized goals and realistic coaching</li>
-              <li>Built for women in peri and post menopause</li>
-              <li>Focus on strength, muscle, bone density, and confidence</li>
-              <li>Support for beginners, gym goals, marathons, ultras, and hiking</li>
-            </ul>
-          </div>
+  <img
+    src="/images/Lauren W.jpg"
+    alt="Coach Lauren"
+    style={{
+      width: "100%",
+      borderRadius: 16,
+      marginBottom: 12,
+      objectFit: "cover"
+    }}
+  />
+  <h3 style={{ marginTop: 0 }}>Coach Lauren</h3>
+  <p style={bodyText}>
+    Endurance athlete, strength advocate, and coach helping women build
+    muscle, support bone density, and train for longevity — not thinness.
+  </p>
+</div>
         </section>
 
         <section id="about" style={sectionStyle}>
