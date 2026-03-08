@@ -86,22 +86,19 @@ export default function App() {
           </div>
 
           
-          <div style={cardStyle}>
+         <div style={cardStyle}>
   <img
     src="/images/Lauren W.jpg"
     alt="Coach Lauren"
     style={{
       width: "100%",
-      borderRadius: 16,
-      marginBottom: 12,
-      objectFit: "cover"
+      height: "100%",
+      minHeight: 420,
+      borderRadius: 20,
+      objectFit: "cover",
+      display: "block"
     }}
   />
-  <h3 style={{ marginTop: 0 }}>Coach Lauren</h3>
-  <p style={bodyText}>
-    Endurance athlete, strength advocate, and coach helping women build
-    muscle, support bone density, and train for longevity — not thinness.
-  </p>
 </div>
         </section>
 
