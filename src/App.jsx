@@ -147,7 +147,34 @@ export default function App() {
           </div>
         </section>
 
-        <section id="results" style={sectionStyle}>
+        <section id="results" style={sectionStyle}><section id="work-with-me" style={sectionStyle}>
+  <h2 style={sectionHeading}>Work With Me</h2>
+  <div style={threeColStyle}>
+    <div style={cardStyle}>
+      <h3 style={{ marginTop: 0 }}>Strength + Longevity Coaching</h3>
+      <p style={bodyText}>
+        Personalized coaching for women who want to build muscle, support bone density,
+        improve energy, and feel stronger in everyday life.
+      </p>
+    </div>
+
+    <div style={cardStyle}>
+      <h3 style={{ marginTop: 0 }}>Run Coaching</h3>
+      <p style={bodyText}>
+        Smart, supportive programming for beginners, marathoners, and ultra runners,
+        with strength built into the process.
+      </p>
+    </div>
+
+    <div style={cardStyle}>
+      <h3 style={{ marginTop: 0 }}>Menopause-Focused Coaching</h3>
+      <p style={bodyText}>
+        Training that respects recovery, hormones, energy levels, and long-term health
+        without the pressure to be thin.
+      </p>
+    </div>
+  </div>
+</section>
           <h2 style={sectionHeading}>Client Wins</h2>
           <div style={threeColStyle}>
             <div style={cardStyle}>
