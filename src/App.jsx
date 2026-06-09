@@ -1,7 +1,10 @@
 import React from "react";
-
-export default function App() {
-  return (
+import BlogPost from "./BlogPost";
+export default function App() {const path = window.location.pathname;
+  if (path === "/blog") {
+  return <BlogPost />;
+}return (
+    
     <div
       style={{
         minHeight: "100vh",
@@ -24,6 +27,8 @@ export default function App() {
             alignItems: "center",
             padding: "16px 0",
             borderBottom: "1px solid rgba(255,255,255,0.15)",
+            gap: 16,
+            flexWrap: "wrap",
           }}
         >
           <div>
@@ -33,9 +38,11 @@ export default function App() {
 
           <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
             <a href="#about" style={navStyle}>About</a>
-            <a href="#services" style={navStyle}>Coaching</a>
-            <a href="#results" style={navStyle}>Results</a>
-            <a href="#contact" style={navStyle}>Contact</a>
+<a href="#services" style={navStyle}>Coaching</a>
+<a href="#results" style={navStyle}>Results</a>
+
+<a href="#adventures" style={navStyle}>Adventures</a>
+<a href="/blog" style={navStyle}>Contact</a>
           </div>
         </header>
 
@@ -85,21 +92,20 @@ export default function App() {
             </div>
           </div>
 
-          
-         <div style={cardStyle}>
-  <img
-    src="/images/Lauren W.jpg"
-    alt="Coach Lauren"
-    style={{
-      width: "100%",
-      height: "100%",
-      minHeight: 420,
-      borderRadius: 20,
-      objectFit: "cover",
-      display: "block"
-    }}
-  />
-</div>
+          <div style={cardStyle}>
+            <img
+              src="/images/Lauren W.jpg"
+              alt="Coach Lauren"
+              style={{
+                width: "100%",
+                height: "100%",
+                minHeight: 420,
+                borderRadius: 20,
+                objectFit: "cover",
+                display: "block",
+              }}
+            />
+          </div>
         </section>
 
         <section id="about" style={sectionStyle}>
@@ -147,34 +153,36 @@ export default function App() {
           </div>
         </section>
 
-        <section id="results" style={sectionStyle}><section id="work-with-me" style={sectionStyle}>
-  <h2 style={sectionHeading}>Work With Me</h2>
-  <div style={threeColStyle}>
-    <div style={cardStyle}>
-      <h3 style={{ marginTop: 0 }}>Strength + Longevity Coaching</h3>
-      <p style={bodyText}>
-        Personalized coaching for women who want to build muscle, support bone density,
-        improve energy, and feel stronger in everyday life.
-      </p>
-    </div>
+        <section id="work-with-me" style={sectionStyle}>
+          <h2 style={sectionHeading}>Work With Me</h2>
+          <div style={threeColStyle}>
+            <div style={cardStyle}>
+              <h3 style={{ marginTop: 0 }}>Strength + Longevity Coaching</h3>
+              <p style={bodyText}>
+                Personalized coaching for women who want to build muscle, support bone density,
+                improve energy, and feel stronger in everyday life.
+              </p>
+            </div>
 
-    <div style={cardStyle}>
-      <h3 style={{ marginTop: 0 }}>Run Coaching</h3>
-      <p style={bodyText}>
-        Smart, supportive programming for beginners, marathoners, and ultra runners,
-        with strength built into the process.
-      </p>
-    </div>
+            <div style={cardStyle}>
+              <h3 style={{ marginTop: 0 }}>Run Coaching</h3>
+              <p style={bodyText}>
+                Smart, supportive programming for beginners, marathoners, and ultra runners,
+                with strength built into the process.
+              </p>
+            </div>
 
-    <div style={cardStyle}>
-      <h3 style={{ marginTop: 0 }}>Menopause-Focused Coaching</h3>
-      <p style={bodyText}>
-        Training that respects recovery, hormones, energy levels, and long-term health
-        without the pressure to be thin.
-      </p>
-    </div>
-  </div>
-</section>
+            <div style={cardStyle}>
+              <h3 style={{ marginTop: 0 }}>Menopause-Focused Coaching</h3>
+              <p style={bodyText}>
+                Training that respects recovery, hormones, energy levels, and long-term health
+                without the pressure to be thin.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="results" style={sectionStyle}>
           <h2 style={sectionHeading}>Client Wins</h2>
           <div style={threeColStyle}>
             <div style={cardStyle}>
@@ -189,6 +197,40 @@ export default function App() {
           </div>
         </section>
 
+        
+
+<section id="blog" style={sectionStyle}>
+  <h2 style={sectionHeading}>Blog</h2>
+  <div style={threeColStyle}>
+  
+  <a href="/blog" style={{ ...cardStyle, textDecoration: "none", display: "block", color: "white" }}></a>
+
+  <a href="#contact" style={{ ...cardStyle, textDecoration: "none", display: "block", color: "white" }}>
+  <h3 style={{ marginTop: 0 }}>Blog Post Title</h3>
+  <p style={bodyText}>
+    Short description of the blog post.
+  </p>
+</a>
+
+  <div style={cardStyle}>
+    <h3 style={{ marginTop: 0 }}>Blog Post Title</h3>
+    <p style={bodyText}>
+      Short description of the blog post. This will preview what the article is about.
+    </p>
+  </div>
+</div>
+  <section id="adventures" style={sectionStyle}>
+  <h2 style={sectionHeading}>Adventures</h2>
+
+ <div style={cardStyle}>
+  <h3 style={{ marginTop: 0 }}>Adventure Title</h3>
+  <p style={bodyText}>
+    Short description of the adventure, retreat, or trip.
+  </p>
+</div>
+</section>
+
+</section>
         <section id="contact" style={sectionStyle}>
           <div style={cardStyle}>
             <h2 style={{ marginTop: 0 }}>Contact</h2>
