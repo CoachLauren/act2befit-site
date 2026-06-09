@@ -145,25 +145,63 @@ improving bone health, or simply feeling strong and capable in their own body ag
               <p style={bodyText}>Build muscle, improve bone density, get stronger, and feel better in your body.</p>
             </div>
             <div style={cardStyle}>
-              <h3 style={{ marginTop: 0 }}>Run Coaching</h3>
-              <p style={bodyText}>From first 5K to marathon PRs to 100-milers, with smart endurance programming.</p>
-            </div>
-            <div style={cardStyle}>
-              <h3 style={{ marginTop: 0 }}>Menopause Support</h3>
-              <p style={bodyText}>Training that respects recovery, hormones, energy levels, and long-term health.</p>
-            </div>
-          </div>
+              <h3 style={{ marginTop: 0 }}>Endurance & Adventure Coaching</h3>
+
+<p style={bodyText}>
+  $149/month | Month-to-Month
+</p>
+
+<p style={bodyText}>
+  Personalized coaching for women pursuing meaningful endurance goals,
+  from hiking adventures and backpacking trips to marathons and ultramarathons.
+</p>
+
+
+<p style={bodyText}>
+  Includes personalized endurance training, integrated strength work,
+  monthly coaching reviews, training app access, and group Q&A sessions.
+</p>
+            <h3 style={{ marginTop: 0 }}>Race Pacing & Crewing Services</h3>
+
+<p style={bodyText}>
+  Custom Pricing
+</p>
+
+<p style={bodyText}>
+  Sometimes athletes need more than a training plan.
+</p>
+
+<p style={bodyText}>
+  Lauren offers race-day pacing, crewing, race strategy,
+  nutrition planning, and event support for select races and adventures.
+</p>
+
+<p style={bodyText}>
+  Pricing is customized based on race distance, event location,
+  travel requirements, and level of support needed.
+</p>
         </section>
 
         <section id="work-with-me" style={sectionStyle}>
           <h2 style={sectionHeading}>Work With Me</h2>
           <div style={threeColStyle}>
             <div style={cardStyle}>
-              <h3 style={{ marginTop: 0 }}>Strength + Longevity Coaching</h3>
-              <p style={bodyText}>
-                Personalized coaching for women who want to build muscle, support bone density,
-                improve energy, and feel stronger in everyday life.
-              </p>
+              <h3 style={{ marginTop: 0 }}>Strength & Longevity Coaching</h3>
+
+<p style={bodyText}>
+  $99/month | 12-Month Commitment
+</p>
+
+<p style={bodyText}>
+  Designed for women who are ready to prioritize their health,
+  build strength, and create lasting habits for the future.
+</p>
+
+<p style={bodyText}>
+  Whether you're completely new to exercise, returning after a long break,
+  or simply looking for a clear path forward, this program provides the guidance,
+  structure, and accountability needed to help you succeed.
+</p>
             </div>
 
             <div style={cardStyle}>
