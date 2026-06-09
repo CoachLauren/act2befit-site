@@ -57,15 +57,16 @@ export default function App() {const path = window.location.pathname;
           <div>
             <div style={pillStyle}>Virtual coaching for women • strength • endurance • longevity</div>
             <h1
-              style={{
-                fontSize: 54,
-                lineHeight: 1.05,
-                margin: "20px 0 16px",
-              }}
-            >
-              Train for longevity —<br />
-              not thinness.
-            </h1>
+  style={{
+    fontSize: 54,
+    lineHeight: 1.05,
+    margin: "20px 0 16px",
+  }}
+>
+  Empower Your Changing Body.<br />
+  Rewrite Your Goals.<br />
+  Redefine What's possible.
+</h1>
             <p
               style={{
                 fontSize: 19,
@@ -74,9 +75,10 @@ export default function App() {const path = window.location.pathname;
                 maxWidth: 700,
               }}
             >
-              Online fitness and strength coaching for women, especially those navigating peri and post menopause.
-              Build muscle, support bone density, improve energy, and train for goals like hiking, getting stronger,
-              running your first marathon, or taking on an ultra.
+              
+              Coaching for women who want to build strength, navigate midlife with confidence,
+and pursue meaningful goals—whether that's hiking a mountain, running an ultra,
+improving bone health, or simply feeling strong and capable in their own body again.
             </p>
 
             <div style={{ display: "flex", gap: 12, marginTop: 24, flexWrap: "wrap" }}>
